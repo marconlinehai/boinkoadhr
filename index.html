@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Download BOI Omnineo APK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
   <style>
     * {
       margin: 0;
@@ -22,34 +23,38 @@
       align-items: center;
       justify-content: center;
       color: #fff;
+      padding: 15px;
     }
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
+      padding: 25px;
       border-radius: 12px;
       text-align: center;
       backdrop-filter: blur(4px);
+      width: 100%;
+      max-width: 400px; /* Mobile friendly width */
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 22px;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 18px;
-      margin-bottom: 30px;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
     button {
       padding: 12px 24px;
-      font-size: 18px;
+      font-size: 16px;
       background-color: #007bff;
       color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      width: 100%; /* Full width on mobile */
     }
 
     button:hover {
@@ -62,10 +67,25 @@
 
     /* Video styling */
     video {
-      margin-top: 25px;
-      width: 320px;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 360px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* Extra small screen tweaks */
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+      button {
+        font-size: 15px;
+        padding: 10px;
+      }
     }
   </style>
 </head>
